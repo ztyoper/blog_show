@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>计算机组成原理 on 冰炭博客</title>
+        <link>https://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/</link>
+        <description>Recent content in 计算机组成原理 on 冰炭博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>Example Person</copyright>
+        <lastBuildDate>Sat, 15 Feb 2025 12:01:33 +0800</lastBuildDate><atom:link href="https://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>浮点数</title>
+        <link>https://example.com/p/%E6%B5%AE%E7%82%B9%E6%95%B0/</link>
+        <pubDate>Sat, 15 Feb 2025 12:01:33 +0800</pubDate>
+        
+        <guid>https://example.com/p/%E6%B5%AE%E7%82%B9%E6%95%B0/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;A = 48 B = -63 尾数 8 位，2 个符号位，阶数 8 位，2 个符号位。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;求[A]补和[B]补的规范化二进制与对应的十六进制&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;48 = 32 + 16 【A】原反补 = 110000 &amp;ndash;&amp;gt; 00.110000*2^6&amp;ndash;&amp;gt;&lt;/p&gt;
+&lt;p&gt;00.000110，00.110000&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;-63 = -(2^6 - 1) 【B】原 = 111111 &amp;ndash;&amp;gt; 11.111111*2^6&amp;ndash;&amp;gt;&lt;/p&gt;
+&lt;p&gt;00.000110，11.111111&lt;/p&gt;
+&lt;p&gt;【B】补 = 00.000110, 11.111111 &amp;ndash;&amp;gt;00.0110，11.11111100&lt;/p&gt;
+&lt;p&gt;&amp;ndash;&amp;gt;00.000110, 11.000000(反码)&amp;ndash;&amp;gt;00.0110, 11.000001(补码)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;求【A+B】补的规范化二进制和对应的十六进制&lt;/p&gt;
+&lt;p&gt;$ \begin{align}
+&amp;amp;【A】补 = 00.000110, 00.110000 \
+&amp;amp;【B】补 = 00.000110, 11.000001\
+&amp;amp;【C&amp;rsquo;】补= 00.000110, 11.110001\
+&amp;amp;【C】补 = 00.000100, 11.000100
+\end{align} $&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;左规，尾数变大（不论尾数是正负数），阶数要变小（不论阶数是正负数）&lt;/li&gt;
+&lt;li&gt;右规，尾数变小（不论尾数是正负数），阶数要变大（不论阶数是正负数）&lt;/li&gt;
+&lt;li&gt;其他的看 ppt 就行&lt;/li&gt;
+&lt;/ol&gt;&lt;/blockquote&gt;
+</description>
+        </item>
+        <item>
+        <title>Cache缓存</title>
+        <link>https://example.com/p/cache%E7%BC%93%E5%AD%98/</link>
+        <pubDate>Sat, 15 Feb 2025 12:01:32 +0800</pubDate>
+        
+        <guid>https://example.com/p/cache%E7%BC%93%E5%AD%98/</guid>
+        <description>&lt;h3 id=&#34;352cache-与主存的映射方式&#34;&gt;3.5.2.Cache 与主存的映射方式
+&lt;/h3&gt;&lt;h4 id=&#34;1三种映射方式httpscdnnlarkcomyuque02023png263592261701432302807-5b42e66a-92d7-41b7-ad5e-8ecd643733f3png&#34;&gt;1.三种映射方式&lt;img src=&#34;https://cdn.nlark.com/yuque/0/2023/png/26359226/1701432302807-5b42e66a-92d7-41b7-ad5e-8ecd643733f3.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+&lt;/h4&gt;&lt;h4 id=&#34;2全相联映射&#34;&gt;2.全相联映射
+&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;组相联映射如果是”2 路组相联“则每组有两个 Cache 块组成。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.nlark.com/yuque/0/2023/png/26359226/1701432454443-756ef3a8-5205-4b02-b763-878548ad5d1f.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;图中：每个 Cache 块都有有效位和标记两个属性。&lt;/p&gt;
+&lt;p&gt;标记：9 表示主存中第 9 块存储在 Cache 中。&lt;/p&gt;
+&lt;p&gt;有效位:1 表示有效，0 表示无效。图中第 7 个 Cache 块标记为 0，但是有效位是 1，相当于主存第 0 块存储在第 7 个 Cache 块中。这也是为什么要设计有效位。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.nlark.com/yuque/0/2023/png/26359226/1701432631135-39adbd99-44e7-4949-952a-e590f72bd017.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;主存大小 256MB=$ 2^8 * 2^{20} $= $ 2^{28} $个存储单元 0~$ 2^{28}-1 $28 个地址位。&lt;/li&gt;
+&lt;li&gt;将主存按照一个 Cache 块的大小进行分块，因为 Cache 与主存的交互是以 &lt;code&gt;块&lt;/code&gt;为单位的。&lt;/li&gt;
+&lt;li&gt;8 个 Cache 行就是 8 个 Cache 块，为了避免 Cache 块与主存块混淆，以下都是用 Cache 行作为称呼。&lt;/li&gt;
+&lt;li&gt;行长可以理解为 Cache 块的大小，主存块大小与 Cache 块的大小相等，主存块以每个字节为单位，总共 64 个单位，需要 6 位块内地址。&lt;/li&gt;
+&lt;li&gt;剩余的 22 个地址为作为标记位，全相联中 Cache 块的标记位要有和主存单元总个数相同的大小。&lt;/li&gt;
+&lt;/ul&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;CPU访问主存地址&lt;/code&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;首先已知第$ 2^{22}-3 $个主存块存储在第 1 行 Cache;第 0 个主存块存储在第 3 行 Cache 中。&lt;/li&gt;
+&lt;li&gt;CPU 访问存储单元 &lt;code&gt;1...1101&lt;/code&gt;001110
+&lt;ol&gt;
+&lt;li&gt;主存地址都前 22 位&amp;hellip;后续直接看图好不好。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;3直接相联映射&#34;&gt;3.直接相联映射
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://cdn.nlark.com/yuque/0/2023/png/26359226/1701433904003-fecbed14-6925-4b76-bc63-075c76b01b76.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;主存大小 256MB=$ 2^8 * 2^{20} $= $ 2^{28} $个存储单元 0~$ 2^{28}-1 $28 个地址位。&lt;/li&gt;
+&lt;li&gt;将主存按照一个 Cache 块的大小进行分块，因为 Cache 与主存的交互是以 &lt;code&gt;块&lt;/code&gt;为单位的。&lt;/li&gt;
+&lt;li&gt;行长可以理解为 Cache 块的大小，主存块大小与 Cache 块的大小相等，以每个字节为单位，总共 64 个单位，需要 6 位块内地址。&lt;/li&gt;
+&lt;li&gt;剩余的 22 个地址为作为标记位，全相联中 Cache 块的标记位要有和主存单元总个数相同的大小。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;值得注意的是：标记为22位太多可以优化&lt;/code&gt;：
+&lt;ul&gt;
+&lt;li&gt;因为使用取模的方式固定映射，那么一个 Cache 行可以被多个主存块映射，因此每一个主存块的块号取模的后 3 位都是一样的。例如:能存储到 0 行 Cache 的主存块有 1 号和$ 2^{22}-3 $号，它们取模 3 都是 000。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;4直接相联映射的优化&#34;&gt;4.直接相联映射的优化
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://cdn.nlark.com/yuque/0/2023/png/26359226/1701433808674-895a0ad2-93c9-40b6-8ce9-79f1153f3e07.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;主存大小 256MB=$ 2^8 * 2^{20} $= $ 2^{28} $个存储单元 0~$ 2^{28}-1 $28 个地址位。&lt;/li&gt;
+&lt;li&gt;将主存按照一个 Cache 块的大小进行分块，因为 Cache 与主存的交互是以 &lt;code&gt;块&lt;/code&gt;为单位的。&lt;/li&gt;
+&lt;li&gt;行长可以理解为 Cache 块的大小，主存块大小与 Cache 块的大小相等，以每个字节为单位，总共 64 个单位，需要 6 位块内地址。&lt;/li&gt;
+&lt;li&gt;剩余的 19 个地址为作为标记位。3 为作为中间 3 位作为行号。
+&lt;ul&gt;
+&lt;li&gt;CPU 查询主存地址是否在 Cache 中存在时，就可以使用 &lt;code&gt;将访问的存储单元二进制&lt;/code&gt;的中间 3 位行号，先查看对应 Cache 中 &lt;code&gt;是否&lt;/code&gt;存有数据，也就是有效位 &lt;code&gt; 是否为1&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;设置行号最主要是少了 3 个标记位。节省了空间。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;5组相联映射&#34;&gt;5.组相联映射
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://cdn.nlark.com/yuque/0/2023/png/26359226/1701434594819-6f9c4879-9103-402d-b20d-7d5ab0e8ca9e.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.nlark.com/yuque/0/2023/png/26359226/1701434774077-d96eecc9-a4bc-4341-a486-1698cfd660d0.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;看懂上面全相联和直接相联就可以看懂组相联了。不想写了&lt;/p&gt;
+&lt;p&gt;对组相联的理解：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;组内随便停车。&lt;/li&gt;
+&lt;li&gt;融合全相联容易停车的优点和直接相联容易查询的优点。&lt;/li&gt;
+&lt;li&gt;就是将 2 行 Cache 行合并为 1 组。可以当成一个 Cache 行，这样组相联后续的分析就和直接映射的分析一样了。&lt;/li&gt;
+&lt;/ul&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;6三种映射方式的总结优缺点&#34;&gt;6.三种映射方式的总结（优缺点）
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://cdn.nlark.com/yuque/0/2023/png/26359226/1701435392612-2e76281c-6ed2-4327-afa9-40fb8f085c53.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

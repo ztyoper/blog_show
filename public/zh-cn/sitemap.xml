@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://example.com/</loc>
-    <lastmod>2025-02-15T10:09:38+08:00</lastmod>
+    <lastmod>2025-02-15T12:01:33+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -20,14 +20,8 @@
                 href="https://example.com/"
                 />
   </url><url>
-    <loc>https://example.com/post/</loc>
-    <lastmod>2025-02-15T10:09:38+08:00</lastmod>
-  </url><url>
-    <loc>https://example.com/p/test/</loc>
-    <lastmod>2025-02-15T10:09:38+08:00</lastmod>
-  </url><url>
     <loc>https://example.com/categories/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+    <lastmod>2025-02-15T12:01:33+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -44,11 +38,29 @@
                 href="https://example.com/categories/"
                 />
   </url><url>
-    <loc>https://example.com/p/test-chinese/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+    <loc>https://example.com/post/</loc>
+    <lastmod>2025-02-15T12:01:33+08:00</lastmod>
+  </url><url>
+    <loc>https://example.com/p/%E6%B5%AE%E7%82%B9%E6%95%B0/</loc>
+    <lastmod>2025-02-15T12:01:33+08:00</lastmod>
+  </url><url>
+    <loc>https://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/</loc>
+    <lastmod>2025-02-15T12:01:33+08:00</lastmod>
+  </url><url>
+    <loc>https://example.com/p/cache%E7%BC%93%E5%AD%98/</loc>
+    <lastmod>2025-02-15T12:01:32+08:00</lastmod>
+  </url><url>
+    <loc>https://example.com/archives/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://example.com/page/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://example.com/links/</loc>
+  </url><url>
+    <loc>https://example.com/search/</loc>
   </url><url>
     <loc>https://example.com/tags/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -66,25 +78,6 @@
                 />
   </url><url>
     <loc>https://example.com/categories/test/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.com/categories/%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.com/tags/%E4%B8%AD%E6%96%87/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.com/archives/</loc>
-    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.com/page/</loc>
-    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.com/p/</loc>
-  </url><url>
-    <loc>https://example.com/links/</loc>
-  </url><url>
-    <loc>https://example.com/search/</loc>
   </url><url>
     <loc>https://example.com/%E5%85%B3%E4%BA%8E/</loc>
   </url>

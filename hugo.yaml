@@ -22,7 +22,7 @@ languages:
         subtitle: Example description
   zh-cn:
     languageName: 中文
-    title: 演示站点
+    title: 冰炭博客
     weight: 2
     params:
       sidebar:
